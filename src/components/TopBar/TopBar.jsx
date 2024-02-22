@@ -16,12 +16,14 @@ const selector = (state) => ({
 function TopBar() {
   const {nodes, edges, startNewProject, onSaveProject} = useStore(selector)
 
+  // check if only one node is not present as target in edges
   const findNodeNotInEdges = (nodes, edges) => {
     const targetIdsInEdges = new Set(edges.map(edge => edge.target));
     const nodesNotInEdges = nodes.filter(node => !targetIdsInEdges.has(node.id));
     return nodesNotInEdges.length === 1;
   };
 
+  // save if not present and success
   const handleSave = () => {
     if (findNodeNotInEdges(nodes, edges)){
       onSaveProject()

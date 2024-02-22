@@ -5,6 +5,7 @@ import {
   applyEdgeChanges,
 } from 'reactflow';
 
+// Initial nodes and edges data
 const initialNodes = [
   {
     id: "1",
@@ -21,6 +22,7 @@ const initialNodes = [
 
 const initialEdges = [];
 
+// Creating custom hook with Zustand
 const useStore = create((set, get) => ({
   counter: 2,
   selectedNode: null,

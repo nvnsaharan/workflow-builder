@@ -12,11 +12,13 @@ function TextNode({ data, isConnectable }) {
   const { onSelectNode, nodes } = useStore(selector)
   const nodeId = useNodeId()
 
+  // set as selected if clicked
   function handleClick(){
     const currentNode = nodes.filter(node => node.id == nodeId)
     onSelectNode(currentNode[0])
   }
 
+  // custom node
   return (
     <div className="text-updater-node" onClick={() => handleClick()}>
       <Handle type="target" position={Position.Left} isConnectable={isConnectable} />

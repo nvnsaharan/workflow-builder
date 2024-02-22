@@ -14,12 +14,14 @@ function UpdateForm({ selectedNode }) {
   const [heading, setHeading] = useState(data.heading || "--")
   const [content, setContent] = useState(data.content || "--")
 
+  // update node and unselect it
   const handleUpdateNode = () => {
     const node = {...selectedNode, data : {heading, content}}
     updateNodeData(node)
     unSelectNode()
   }
 
+  // delete node and unselect it
   const handleDelete = () => {
     onDeleteNode(selectedNode)
     unSelectNode()

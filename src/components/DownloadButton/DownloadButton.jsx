@@ -14,12 +14,10 @@ function downloadImage(dataUrl) {
 const imageWidth = 1024;
 const imageHeight = 768;
 
+// download flow using html-to-image lib.
 function DownloadButton() {
   const { getNodes } = useReactFlow();
   const onClick = () => {
-    // we calculate a transform for the nodes so that all nodes are visible
-    // we then overwrite the transform of the `.react-flow__viewport` element
-    // with the style option of the html-to-image library
     const nodesBounds = getRectOfNodes(getNodes());
     const transform = getTransformForBounds(nodesBounds, imageWidth, imageHeight, 0.5, 2);
 

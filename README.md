@@ -2,6 +2,24 @@
 
 This project is a simple Chatbot Flow Builder built using React and Vite, with extensibility in mind to easily add new features. It allows users to create chatbot flows by connecting multiple messages together to determine the order of execution.
 
+## Project Structure
+
+
+    -src
+        - components
+            - AllNodes // create all node type i.e. Text
+            - DownloadButton // to download flow
+            - NodeList // List down all node types for drag and drop
+            - SideBar
+            - TopBar // save and reset buttons
+            - UpdateForm // update selected node
+            - FlowBuilder.jsx // ReactFlow main component
+        - store
+            - store.js // for store creation and state management
+        - App.jsx
+        - main.jsx
+
+
 ## Features
 
 - **Text Node**: Users can create text nodes which represent messages in the chatbot flow.

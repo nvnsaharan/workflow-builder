@@ -16,6 +16,7 @@ function NodeList() {
   const { nodes, setNodes, counter, setCounter, reactFlowInstance } = useStore(selector)
   const [targetPosition, setTargetPosition] = useState(null)
 
+  // check the position relative to reactflow and it can be zoomed
   useEffect(() => {
     if (targetPosition){
       const position = reactFlowInstance?.screenToFlowPosition({
@@ -27,6 +28,7 @@ function NodeList() {
     }
   }, [targetPosition])
 
+  // handle drag and drop
   useEffect(() => {
     const button = buttonRef.current;
     button.draggable = true;
@@ -40,6 +42,7 @@ function NodeList() {
     };
   }, []);
 
+  // add custom node in nodes
   const addNewNode = (clientX , clientY) => {
     setNodes([...nodes, { 
       id: Date.now().toString(),

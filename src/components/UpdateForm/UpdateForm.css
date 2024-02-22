@@ -1,0 +1,62 @@
+.update-form-text{
+  display: flex;
+  flex-direction: column;
+  font-family: monospace;
+  padding: 20px 10px;
+  gap: 15px;
+  align-items: center;
+  height: 100%;
+  border: 1.5px solid lightgray;
+}
+
+.update-form-text h2{
+  margin-bottom: 5px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid lightgray;
+  width: 100%;
+  text-align: center;
+}
+
+.update-form-text input {
+  width: 100%;
+  height: 30px;
+  font-size: 18px;
+  padding: 0 5px;
+  border-radius: 5px;
+  outline: none;
+  border: 1px solid black;
+  font-family: monospace;
+}
+
+.update-form-text textarea {
+  width: 100%;
+  height: 100px;
+  font-size: 16px;
+  padding: 0 5px;
+  border-radius: 5px;
+  outline: none;
+  border: 1px solid black;
+  font-family: monospace;
+  resize: none;
+}
+
+.update-form-text button {
+    font-size: 14px;
+    padding: 6px 10px;
+    background: #b2efe4;
+    border-radius: 20px;
+    outline: none;
+    border: 1px solid black;
+    font-family: monospace;
+    cursor: pointer;
+}
+
+.cancel-button {
+  margin-top: -7px;
+  background: #d0ff007d !important;
+}
+
+.delete-button{
+  margin-top: -7px;
+  background: #ff00007d !important;
+}

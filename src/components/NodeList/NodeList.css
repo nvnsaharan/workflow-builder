@@ -1,0 +1,28 @@
+.node-list-div{
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 0 auto;
+  height: 100%;
+  border: 1.5px solid lightgray;
+}
+
+.add-text-node-button {
+  border: 1px solid lightblue;
+  background: #b2efe487;
+  padding: 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-weight: 500;
+  width: 100px;
+  height: 100px;
+  justify-content: center;
+  align-items: center;
+}
+.add-text-node-button img{
+  max-height: 50px;
+}

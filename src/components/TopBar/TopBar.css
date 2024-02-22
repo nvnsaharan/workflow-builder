@@ -1,0 +1,26 @@
+.top-bar-main-div{
+  height: 10vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  padding: 0 20%;
+  border: 1.5px solid lightgray;
+  gap: 20px;
+}
+
+.top-bar-main-div button {
+  font-size: 14px;
+  padding: 6px 10px;
+  background: #b2efe4;
+  border-radius: 20px;
+  outline: none;
+  border: 1px solid black;
+  font-family: monospace;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.new-project-button {
+  background: #ffc296 !important;
+}
